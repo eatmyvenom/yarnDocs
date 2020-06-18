@@ -120,7 +120,7 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>private boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_25323">field_25323</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#keepJigsaws">keepJigsaws</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -161,7 +161,7 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <tr class="rowColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.util.math.BlockPos,int,boolean)">JigsawGeneratingC2SPacket</a></span>&#8203;(<a href="../../../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
 int&nbsp;maxDepth,
-boolean&nbsp;bool)</code></th>
+boolean&nbsp;keepJigsaws)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -203,13 +203,13 @@ boolean&nbsp;bool)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i3">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_29446()">method_29446</a></span>()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#read(net.minecraft.network.PacketByteBuf)">read</a></span>&#8203;(<a href="../../../PacketByteBuf.html" title="class in net.minecraft.network">PacketByteBuf</a>&nbsp;buf)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i4">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#read(net.minecraft.network.PacketByteBuf)">read</a></span>&#8203;(<a href="../../../PacketByteBuf.html" title="class in net.minecraft.network">PacketByteBuf</a>&nbsp;buf)</code></th>
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#shouldKeepJigsaws()">shouldKeepJigsaws</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i5">
@@ -258,8 +258,8 @@ boolean&nbsp;bool)</code></th>
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="field_25323">field_25323</a></h3>
-<div class="memberSignature"><span class="modifiers">private</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">field_25323</span></div>
+<h3><a id="keepJigsaws">keepJigsaws</a></h3>
+<div class="memberSignature"><span class="modifiers">private</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">keepJigsaws</span></div>
 </section>
 </li>
 </ul>
@@ -284,7 +284,7 @@ boolean&nbsp;bool)</code></th>
 <div class="memberSignature"><span class="annotations">@Environment(CLIENT)
 </span><span class="modifiers">public</span>&nbsp;<span class="memberName">JigsawGeneratingC2SPacket</span>&#8203;(<span class="arguments"><a href="../../../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
 int&nbsp;maxDepth,
-boolean&nbsp;bool)</span></div>
+boolean&nbsp;keepJigsaws)</span></div>
 </section>
 </li>
 </ul>
@@ -347,8 +347,8 @@ boolean&nbsp;bool)</span></div>
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="method_29446()">method_29446</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">method_29446</span>()</div>
+<h3><a id="shouldKeepJigsaws()">shouldKeepJigsaws</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">shouldKeepJigsaws</span>()</div>
 </section>
 </li>
 </ul>

@@ -19,8 +19,8 @@
 <script type="text/javascript" src="../../../script-dir/jquery-ui.js"></script>
 </head>
 <body class="class-declaration">
-<script type="text/javascript">var data = {"i0":1,"i1":1,"i2":1,"i3":1,"i4":6,"i5":6};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+<script type="text/javascript">var data = {"i0":1,"i1":1,"i2":18,"i3":1,"i4":1,"i5":6,"i6":6};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -181,7 +181,7 @@ loadScripts(document, 'script');</script>
 </a>
 <h2>Method Summary</h2>
 <div class="memberSummary">
-<div role="tablist" aria-orientation="horizontal"><button role="tab" aria-selected="true" aria-controls="memberSummary_tabpanel" tabindex="0" onkeydown="switchTab(event)" id="t0" class="activeTableTab">All Methods</button><button role="tab" aria-selected="false" aria-controls="memberSummary_tabpanel" tabindex="-1" onkeydown="switchTab(event)" id="t1" class="tableTab" onclick="show(1);">Static Methods</button><button role="tab" aria-selected="false" aria-controls="memberSummary_tabpanel" tabindex="-1" onkeydown="switchTab(event)" id="t2" class="tableTab" onclick="show(2);">Instance Methods</button><button role="tab" aria-selected="false" aria-controls="memberSummary_tabpanel" tabindex="-1" onkeydown="switchTab(event)" id="t3" class="tableTab" onclick="show(4);">Abstract Methods</button></div>
+<div role="tablist" aria-orientation="horizontal"><button role="tab" aria-selected="true" aria-controls="memberSummary_tabpanel" tabindex="0" onkeydown="switchTab(event)" id="t0" class="activeTableTab">All Methods</button><button role="tab" aria-selected="false" aria-controls="memberSummary_tabpanel" tabindex="-1" onkeydown="switchTab(event)" id="t1" class="tableTab" onclick="show(1);">Static Methods</button><button role="tab" aria-selected="false" aria-controls="memberSummary_tabpanel" tabindex="-1" onkeydown="switchTab(event)" id="t2" class="tableTab" onclick="show(2);">Instance Methods</button><button role="tab" aria-selected="false" aria-controls="memberSummary_tabpanel" tabindex="-1" onkeydown="switchTab(event)" id="t3" class="tableTab" onclick="show(4);">Abstract Methods</button><button role="tab" aria-selected="false" aria-controls="memberSummary_tabpanel" tabindex="-1" onkeydown="switchTab(event)" id="t5" class="tableTab" onclick="show(16);">Default Methods</button></div>
 <div id="memberSummary_tabpanel" role="tabpanel">
 <table aria-labelledby="t0">
 <thead>
@@ -207,13 +207,18 @@ loadScripts(document, 'script');</script>
 </td>
 </tr>
 <tr class="altColor" id="i2">
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getString()">getString</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i3">
 <td class="colFirst"><code>static <a href="StringRenderable.html" title="interface in net.minecraft.text">StringRenderable</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#plain(java.lang.String)">plain</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
 <td class="colLast">
 <div class="block">Creates a renderable from a plain string.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i3">
+<tr class="altColor" id="i4">
 <td class="colFirst"><code>static <a href="StringRenderable.html" title="interface in net.minecraft.text">StringRenderable</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#styled(java.lang.String,net.minecraft.text.Style)">styled</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
 <a href="Style.html" title="class in net.minecraft.text">Style</a>&nbsp;style)</code></th>
@@ -221,7 +226,7 @@ loadScripts(document, 'script');</script>
 <div class="block">Creates a visitable from a plain string and a root style.</div>
 </td>
 </tr>
-<tr class="altColor" id="i4">
+<tr class="rowColor" id="i5">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visit(net.minecraft.text.StringRenderable.StyledVisitor,net.minecraft.text.Style)">visit</a></span>&#8203;(<a href="StringRenderable.StyledVisitor.html" title="interface in net.minecraft.text">StringRenderable.StyledVisitor</a>&lt;T&gt;&nbsp;styledVisitor,
 <a href="Style.html" title="class in net.minecraft.text">Style</a>&nbsp;style)</code></th>
@@ -230,7 +235,7 @@ loadScripts(document, 'script');</script>
  the visitor.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i5">
+<tr class="altColor" id="i6">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visit(net.minecraft.text.StringRenderable.Visitor)">visit</a></span>&#8203;(<a href="StringRenderable.Visitor.html" title="interface in net.minecraft.text">StringRenderable.Visitor</a>&lt;T&gt;&nbsp;visitor)</code></th>
 <td class="colLast">
@@ -357,6 +362,12 @@ loadScripts(document, 'script');</script>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>visitables</code> - a list of visitables</dd>
 </dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="getString()">getString</a></h3>
+<div class="memberSignature"><span class="modifiers">default</span>&nbsp;<span class="returnType"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></span>&nbsp;<span class="memberName">getString</span>()</div>
 </section>
 </li>
 </ul>

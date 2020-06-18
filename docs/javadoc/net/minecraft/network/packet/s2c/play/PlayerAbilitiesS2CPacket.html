@@ -19,7 +19,7 @@
 <script type="text/javascript" src="../../../../../../script-dir/jquery-ui.js"></script>
 </head>
 <body class="class-declaration">
-<script type="text/javascript">var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+<script type="text/javascript">var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -242,36 +242,6 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 </tr>
 <tr class="altColor" id="i8">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setAllowFlying(boolean)">setAllowFlying</a></span>&#8203;(boolean&nbsp;bool)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor" id="i9">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCreativeMode(boolean)">setCreativeMode</a></span>&#8203;(boolean&nbsp;bool)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor" id="i10">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setFlying(boolean)">setFlying</a></span>&#8203;(boolean&nbsp;bool)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor" id="i11">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setFlySpeed(float)">setFlySpeed</a></span>&#8203;(float&nbsp;float2)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor" id="i12">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setInvulnerable(boolean)">setInvulnerable</a></span>&#8203;(boolean&nbsp;bool)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor" id="i13">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setWalkSpeed(float)">setWalkSpeed</a></span>&#8203;(float&nbsp;float2)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor" id="i14">
-<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#write(net.minecraft.network.PacketByteBuf)">write</a></span>&#8203;(<a href="../../../PacketByteBuf.html" title="class in net.minecraft.network">PacketByteBuf</a>&nbsp;buf)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -409,49 +379,29 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <li class="blockList">
 <section class="detail">
 <h3><a id="isInvulnerable()">isInvulnerable</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">isInvulnerable</span>()</div>
-</section>
-</li>
-<li class="blockList">
-<section class="detail">
-<h3><a id="setInvulnerable(boolean)">setInvulnerable</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">setInvulnerable</span>&#8203;(<span class="arguments">boolean&nbsp;bool)</span></div>
+<div class="memberSignature"><span class="annotations">@Environment(CLIENT)
+</span><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">isInvulnerable</span>()</div>
 </section>
 </li>
 <li class="blockList">
 <section class="detail">
 <h3><a id="isFlying()">isFlying</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">isFlying</span>()</div>
-</section>
-</li>
-<li class="blockList">
-<section class="detail">
-<h3><a id="setFlying(boolean)">setFlying</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">setFlying</span>&#8203;(<span class="arguments">boolean&nbsp;bool)</span></div>
+<div class="memberSignature"><span class="annotations">@Environment(CLIENT)
+</span><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">isFlying</span>()</div>
 </section>
 </li>
 <li class="blockList">
 <section class="detail">
 <h3><a id="allowFlying()">allowFlying</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">allowFlying</span>()</div>
-</section>
-</li>
-<li class="blockList">
-<section class="detail">
-<h3><a id="setAllowFlying(boolean)">setAllowFlying</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">setAllowFlying</span>&#8203;(<span class="arguments">boolean&nbsp;bool)</span></div>
+<div class="memberSignature"><span class="annotations">@Environment(CLIENT)
+</span><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">allowFlying</span>()</div>
 </section>
 </li>
 <li class="blockList">
 <section class="detail">
 <h3><a id="isCreativeMode()">isCreativeMode</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">isCreativeMode</span>()</div>
-</section>
-</li>
-<li class="blockList">
-<section class="detail">
-<h3><a id="setCreativeMode(boolean)">setCreativeMode</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">setCreativeMode</span>&#8203;(<span class="arguments">boolean&nbsp;bool)</span></div>
+<div class="memberSignature"><span class="annotations">@Environment(CLIENT)
+</span><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">isCreativeMode</span>()</div>
 </section>
 </li>
 <li class="blockList">
@@ -463,21 +413,9 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="setFlySpeed(float)">setFlySpeed</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">setFlySpeed</span>&#8203;(<span class="arguments">float&nbsp;float2)</span></div>
-</section>
-</li>
-<li class="blockList">
-<section class="detail">
 <h3><a id="getWalkSpeed()">getWalkSpeed</a></h3>
 <div class="memberSignature"><span class="annotations">@Environment(CLIENT)
 </span><span class="modifiers">public</span>&nbsp;<span class="returnType">float</span>&nbsp;<span class="memberName">getWalkSpeed</span>()</div>
-</section>
-</li>
-<li class="blockList">
-<section class="detail">
-<h3><a id="setWalkSpeed(float)">setWalkSpeed</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">setWalkSpeed</span>&#8203;(<span class="arguments">float&nbsp;float2)</span></div>
 </section>
 </li>
 </ul>

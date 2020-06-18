@@ -19,7 +19,7 @@
 <script type="text/javascript" src="../../../script-dir/jquery-ui.js"></script>
 </head>
 <body class="class-declaration">
-<script type="text/javascript">var data = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10};
+<script type="text/javascript">var data = {"i0":10,"i1":9,"i2":9,"i3":9,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -163,11 +163,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Spliterator
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiPredicate</a>&lt;<a href="../block/BlockState.html" title="class in net.minecraft.block">BlockState</a>,&#8203;<a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_25669">field_25669</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>private <a href="../util/math/BlockPos.Mutable.html" title="class in net.minecraft.util.math">BlockPos.Mutable</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pos">pos</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private <a href="CollisionView.html" title="interface in net.minecraft.world">CollisionView</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#world">world</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -202,6 +207,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Spliterator
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.world.CollisionView,net.minecraft.entity.Entity,net.minecraft.util.math.Box)">BlockCollisionSpliterator</a></span>&#8203;(<a href="CollisionView.html" title="interface in net.minecraft.world">CollisionView</a>&nbsp;world,
 <a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
 <a href="../util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.world.CollisionView,net.minecraft.entity.Entity,net.minecraft.util.math.Box,java.util.function.BiPredicate)">BlockCollisionSpliterator</a></span>&#8203;(<a href="CollisionView.html" title="interface in net.minecraft.world">CollisionView</a>&nbsp;collisionView,
+<a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
+<a href="../util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiPredicate</a>&lt;<a href="../block/BlockState.html" title="class in net.minecraft.block">BlockState</a>,&#8203;<a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&gt;&nbsp;biPredicate)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -240,16 +252,28 @@ int&nbsp;z)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i2">
+<td class="colFirst"><code>private static boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_30130(net.minecraft.util.shape.VoxelShape,net.minecraft.util.math.Box)">method_30130</a></span>&#8203;(<a href="../util/shape/VoxelShape.html" title="class in net.minecraft.util.shape">VoxelShape</a>&nbsp;voxelShape,
+<a href="../util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i3">
+<td class="colFirst"><code>private static boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_30131(net.minecraft.util.shape.VoxelShape,net.minecraft.util.math.Box)">method_30131</a></span>&#8203;(<a href="../util/shape/VoxelShape.html" title="class in net.minecraft.util.shape">VoxelShape</a>&nbsp;voxelShape,
+<a href="../util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i4">
 <td class="colFirst"><code>(package private) boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#offerEntitylessShape(java.util.function.Consumer)">offerEntitylessShape</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;? super <a href="../util/shape/VoxelShape.html" title="class in net.minecraft.util.shape">VoxelShape</a>&gt;&nbsp;consumer)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i3">
+<tr class="rowColor" id="i5">
 <td class="colFirst"><code>(package private) boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#offerEntityShape(java.util.function.Consumer)">offerEntityShape</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;? super <a href="../util/shape/VoxelShape.html" title="class in net.minecraft.util.shape">VoxelShape</a>&gt;&nbsp;consumer)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i4">
+<tr class="altColor" id="i6">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tryAdvance(java.util.function.Consumer)">tryAdvance</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;? super <a href="../util/shape/VoxelShape.html" title="class in net.minecraft.util.shape">VoxelShape</a>&gt;&nbsp;consumer)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -335,6 +359,12 @@ int&nbsp;z)</code></th>
 <div class="memberSignature"><span class="modifiers">private</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">checkEntity</span></div>
 </section>
 </li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="field_25669">field_25669</a></h3>
+<div class="memberSignature"><span class="modifiers">private final</span>&nbsp;<span class="returnType"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiPredicate</a>&lt;<a href="../block/BlockState.html" title="class in net.minecraft.block">BlockState</a>,&#8203;<a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&gt;</span>&nbsp;<span class="memberName">field_25669</span></div>
+</section>
+</li>
 </ul>
 </section>
 </li>
@@ -352,6 +382,16 @@ int&nbsp;z)</code></th>
 <a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation" class="externalLink">@Nullable</a>
 <a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
 <a href="../util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box)</span></div>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="&lt;init&gt;(net.minecraft.world.CollisionView,net.minecraft.entity.Entity,net.minecraft.util.math.Box,java.util.function.BiPredicate)">BlockCollisionSpliterator</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">BlockCollisionSpliterator</span>&#8203;(<span class="arguments"><a href="CollisionView.html" title="interface in net.minecraft.world">CollisionView</a>&nbsp;collisionView,
+<a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation" class="externalLink">@Nullable</a>
+<a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
+<a href="../util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiPredicate</a>&lt;<a href="../block/BlockState.html" title="class in net.minecraft.block">BlockState</a>,&#8203;<a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&gt;&nbsp;biPredicate)</span></div>
 </section>
 </li>
 </ul>
@@ -388,6 +428,20 @@ int&nbsp;z)</span></div>
 <section class="detail">
 <h3><a id="offerEntityShape(java.util.function.Consumer)">offerEntityShape</a></h3>
 <div class="memberSignature"><span class="returnType">boolean</span>&nbsp;<span class="memberName">offerEntityShape</span>&#8203;(<span class="arguments"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;? super <a href="../util/shape/VoxelShape.html" title="class in net.minecraft.util.shape">VoxelShape</a>&gt;&nbsp;consumer)</span></div>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="method_30130(net.minecraft.util.shape.VoxelShape,net.minecraft.util.math.Box)">method_30130</a></h3>
+<div class="memberSignature"><span class="modifiers">private static</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">method_30130</span>&#8203;(<span class="arguments"><a href="../util/shape/VoxelShape.html" title="class in net.minecraft.util.shape">VoxelShape</a>&nbsp;voxelShape,
+<a href="../util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box)</span></div>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="method_30131(net.minecraft.util.shape.VoxelShape,net.minecraft.util.math.Box)">method_30131</a></h3>
+<div class="memberSignature"><span class="modifiers">private static</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">method_30131</span>&#8203;(<span class="arguments"><a href="../util/shape/VoxelShape.html" title="class in net.minecraft.util.shape">VoxelShape</a>&nbsp;voxelShape,
+<a href="../util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box)</span></div>
 </section>
 </li>
 <li class="blockList">

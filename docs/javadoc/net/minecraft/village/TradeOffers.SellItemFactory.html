@@ -175,37 +175,37 @@ implements <a href="TradeOffers.Factory.html" title="interface in net.minecraft.
 <tbody>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.block.Block,int,int,int,int)">SellItemFactory</a></span>&#8203;(<a href="../block/Block.html" title="class in net.minecraft.block">Block</a>&nbsp;block,
-int&nbsp;int2,
-int&nbsp;int3,
-int&nbsp;int4,
-int&nbsp;int5)</code></th>
+int&nbsp;price,
+int&nbsp;count,
+int&nbsp;maxUses,
+int&nbsp;experience)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.item.Item,int,int,int)">SellItemFactory</a></span>&#8203;(<a href="../item/Item.html" title="class in net.minecraft.item">Item</a>&nbsp;item,
-int&nbsp;int2,
-int&nbsp;int3,
-int&nbsp;int4)</code></th>
+int&nbsp;price,
+int&nbsp;count,
+int&nbsp;experience)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.item.Item,int,int,int,int)">SellItemFactory</a></span>&#8203;(<a href="../item/Item.html" title="class in net.minecraft.item">Item</a>&nbsp;item,
-int&nbsp;int2,
-int&nbsp;int3,
-int&nbsp;int4,
-int&nbsp;int5)</code></th>
+int&nbsp;price,
+int&nbsp;count,
+int&nbsp;maxUses,
+int&nbsp;experience)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.item.ItemStack,int,int,int,int)">SellItemFactory</a></span>&#8203;(<a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
-int&nbsp;int2,
-int&nbsp;int3,
-int&nbsp;int4,
-int&nbsp;int5)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.item.ItemStack,int,int,int,int)">SellItemFactory</a></span>&#8203;(<a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
+int&nbsp;price,
+int&nbsp;count,
+int&nbsp;maxUses,
+int&nbsp;experience)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.item.ItemStack,int,int,int,int,float)">SellItemFactory</a></span>&#8203;(<a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.item.ItemStack,int,int,int,int,float)">SellItemFactory</a></span>&#8203;(<a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
 int&nbsp;price,
 int&nbsp;count,
 int&nbsp;maxUses,
@@ -240,7 +240,9 @@ float&nbsp;multiplier)</code></th>
 <td class="colFirst"><code><a href="TradeOffer.html" title="class in net.minecraft.village">TradeOffer</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#create(net.minecraft.entity.Entity,java.util.Random)">create</a></span>&#8203;(<a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Creates a trade offer.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -314,45 +316,45 @@ float&nbsp;multiplier)</code></th>
 <section class="detail">
 <h3><a id="&lt;init&gt;(net.minecraft.block.Block,int,int,int,int)">SellItemFactory</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">SellItemFactory</span>&#8203;(<span class="arguments"><a href="../block/Block.html" title="class in net.minecraft.block">Block</a>&nbsp;block,
-int&nbsp;int2,
-int&nbsp;int3,
-int&nbsp;int4,
-int&nbsp;int5)</span></div>
+int&nbsp;price,
+int&nbsp;count,
+int&nbsp;maxUses,
+int&nbsp;experience)</span></div>
 </section>
 </li>
 <li class="blockList">
 <section class="detail">
 <h3><a id="&lt;init&gt;(net.minecraft.item.Item,int,int,int)">SellItemFactory</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">SellItemFactory</span>&#8203;(<span class="arguments"><a href="../item/Item.html" title="class in net.minecraft.item">Item</a>&nbsp;item,
-int&nbsp;int2,
-int&nbsp;int3,
-int&nbsp;int4)</span></div>
+int&nbsp;price,
+int&nbsp;count,
+int&nbsp;experience)</span></div>
 </section>
 </li>
 <li class="blockList">
 <section class="detail">
 <h3><a id="&lt;init&gt;(net.minecraft.item.Item,int,int,int,int)">SellItemFactory</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">SellItemFactory</span>&#8203;(<span class="arguments"><a href="../item/Item.html" title="class in net.minecraft.item">Item</a>&nbsp;item,
-int&nbsp;int2,
-int&nbsp;int3,
-int&nbsp;int4,
-int&nbsp;int5)</span></div>
+int&nbsp;price,
+int&nbsp;count,
+int&nbsp;maxUses,
+int&nbsp;experience)</span></div>
 </section>
 </li>
 <li class="blockList">
 <section class="detail">
 <h3><a id="&lt;init&gt;(net.minecraft.item.ItemStack,int,int,int,int)">SellItemFactory</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">SellItemFactory</span>&#8203;(<span class="arguments"><a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
-int&nbsp;int2,
-int&nbsp;int3,
-int&nbsp;int4,
-int&nbsp;int5)</span></div>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">SellItemFactory</span>&#8203;(<span class="arguments"><a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
+int&nbsp;price,
+int&nbsp;count,
+int&nbsp;maxUses,
+int&nbsp;experience)</span></div>
 </section>
 </li>
 <li class="blockList">
 <section class="detail">
 <h3><a id="&lt;init&gt;(net.minecraft.item.ItemStack,int,int,int,int,float)">SellItemFactory</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">SellItemFactory</span>&#8203;(<span class="arguments"><a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">SellItemFactory</span>&#8203;(<span class="arguments"><a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
 int&nbsp;price,
 int&nbsp;count,
 int&nbsp;maxUses,
@@ -375,9 +377,12 @@ float&nbsp;multiplier)</span></div>
 <h3><a id="create(net.minecraft.entity.Entity,java.util.Random)">create</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="TradeOffer.html" title="class in net.minecraft.village">TradeOffer</a></span>&nbsp;<span class="memberName">create</span>&#8203;(<span class="arguments"><a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random)</span></div>
+<div class="block">Creates a trade offer.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="TradeOffers.Factory.html#create(net.minecraft.entity.Entity,java.util.Random)">create</a></code>&nbsp;in interface&nbsp;<code><a href="TradeOffers.Factory.html" title="interface in net.minecraft.village">TradeOffers.Factory</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new trade offer, or <code>null</code> if none should be created</dd>
 </dl>
 </section>
 </li>

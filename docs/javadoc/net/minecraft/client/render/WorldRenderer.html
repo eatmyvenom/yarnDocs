@@ -19,7 +19,7 @@
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.js"></script>
 </head>
 <body class="class-declaration">
-<script type="text/javascript">var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":9,"i12":9,"i13":9,"i14":10,"i15":9,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":9,"i24":9,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":9,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":10,"i73":10,"i74":10,"i75":10,"i76":10};
+<script type="text/javascript">var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":9,"i12":9,"i13":9,"i14":10,"i15":9,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":9,"i24":9,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":9,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":10,"i73":10,"i74":10,"i75":10,"i76":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -655,19 +655,21 @@ float&nbsp;alpha)</code></th>
 </tr>
 <tr class="rowColor" id="i11">
 <td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#drawBox(net.minecraft.client.util.math.MatrixStack,net.minecraft.client.render.VertexConsumer,double,double,double,double,double,double,float,float,float,float)">drawBox</a></span>&#8203;(<a href="../util/math/MatrixStack.html" title="class in net.minecraft.client.util.math">MatrixStack</a>&nbsp;matrixStack,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#drawBox(net.minecraft.client.util.math.MatrixStack,net.minecraft.client.render.VertexConsumer,double,double,double,double,double,double,float,float,float,float)">drawBox</a></span>&#8203;(<a href="../util/math/MatrixStack.html" title="class in net.minecraft.client.util.math">MatrixStack</a>&nbsp;matrices,
 <a href="VertexConsumer.html" title="interface in net.minecraft.client.render">VertexConsumer</a>&nbsp;vertexConsumer,
-double&nbsp;double2,
-double&nbsp;double3,
-double&nbsp;double4,
-double&nbsp;double5,
-double&nbsp;double6,
-double&nbsp;double7,
-float&nbsp;float2,
-float&nbsp;float3,
-float&nbsp;float4,
-float&nbsp;float5)</code></th>
-<td class="colLast">&nbsp;</td>
+double&nbsp;x1,
+double&nbsp;y1,
+double&nbsp;z1,
+double&nbsp;x2,
+double&nbsp;y2,
+double&nbsp;z2,
+float&nbsp;red,
+float&nbsp;green,
+float&nbsp;blue,
+float&nbsp;alpha)</code></th>
+<td class="colLast">
+<div class="block">Draws a box spanning from [x1,y1,z1] to [x2,y2,z2].</div>
+</td>
 </tr>
 <tr class="altColor" id="i12">
 <td class="colFirst"><code>static void</code></td>
@@ -680,24 +682,28 @@ double&nbsp;x2,
 double&nbsp;y2,
 double&nbsp;z2,
 float&nbsp;red,
-float&nbsp;float2,
-float&nbsp;float3,
-float&nbsp;alpha,
-float&nbsp;float4,
 float&nbsp;green,
-float&nbsp;blue)</code></th>
-<td class="colLast">&nbsp;</td>
+float&nbsp;blue,
+float&nbsp;alpha,
+float&nbsp;xAxisRed,
+float&nbsp;yAxisGreen,
+float&nbsp;zAxisBlue)</code></th>
+<td class="colLast">
+<div class="block">Draws a box spanning from [x1,y1,z1] to [x2,y2,z2].</div>
+</td>
 </tr>
 <tr class="rowColor" id="i13">
 <td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#drawBox(net.minecraft.client.util.math.MatrixStack,net.minecraft.client.render.VertexConsumer,net.minecraft.util.math.Box,float,float,float,float)">drawBox</a></span>&#8203;(<a href="../util/math/MatrixStack.html" title="class in net.minecraft.client.util.math">MatrixStack</a>&nbsp;matrixStack,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#drawBox(net.minecraft.client.util.math.MatrixStack,net.minecraft.client.render.VertexConsumer,net.minecraft.util.math.Box,float,float,float,float)">drawBox</a></span>&#8203;(<a href="../util/math/MatrixStack.html" title="class in net.minecraft.client.util.math">MatrixStack</a>&nbsp;matrices,
 <a href="VertexConsumer.html" title="interface in net.minecraft.client.render">VertexConsumer</a>&nbsp;vertexConsumer,
 <a href="../../util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box,
-float&nbsp;float2,
-float&nbsp;float3,
-float&nbsp;float4,
-float&nbsp;float5)</code></th>
-<td class="colLast">&nbsp;</td>
+float&nbsp;red,
+float&nbsp;green,
+float&nbsp;blue,
+float&nbsp;alpha)</code></th>
+<td class="colLast">
+<div class="block">Draws a box.</div>
+</td>
 </tr>
 <tr class="altColor" id="i14">
 <td class="colFirst"><code>void</code></td>
@@ -804,11 +810,6 @@ float&nbsp;float5)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i32">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_22713(net.minecraft.client.render.Camera)">method_22713</a></span>&#8203;(<a href="Camera.html" title="class in net.minecraft.client.render">Camera</a>&nbsp;camera)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor" id="i33">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_22978(net.minecraft.client.render.BufferBuilder,double,double,double,double,int,double,float,float)">method_22978</a></span>&#8203;(<a href="BufferBuilder.html" title="class in net.minecraft.client.render">BufferBuilder</a>&nbsp;bufferBuilder,
 double&nbsp;double2,
@@ -821,7 +822,7 @@ float&nbsp;float2,
 float&nbsp;float3)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i34">
+<tr class="rowColor" id="i33">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_22983(net.minecraft.client.util.math.MatrixStack,net.minecraft.client.render.VertexConsumer,net.minecraft.util.shape.VoxelShape,double,double,double,float,float,float,float)">method_22983</a></span>&#8203;(<a href="../util/math/MatrixStack.html" title="class in net.minecraft.client.util.math">MatrixStack</a>&nbsp;matrixStack,
 <a href="VertexConsumer.html" title="interface in net.minecraft.client.render">VertexConsumer</a>&nbsp;vertexConsumer,
@@ -835,13 +836,13 @@ float&nbsp;float4,
 float&nbsp;float5)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i35">
+<tr class="altColor" id="i34">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_22984(net.minecraft.client.render.VertexConsumer,int)">method_22984</a></span>&#8203;(<a href="VertexConsumer.html" title="interface in net.minecraft.client.render">VertexConsumer</a>&nbsp;vertexConsumer,
 int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i36">
+<tr class="rowColor" id="i35">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_22985(net.minecraft.client.render.VertexConsumer,int,int,int,int,int,int,int)">method_22985</a></span>&#8203;(<a href="VertexConsumer.html" title="interface in net.minecraft.client.render">VertexConsumer</a>&nbsp;vertexConsumer,
 int&nbsp;int2,
@@ -853,31 +854,31 @@ int&nbsp;int7,
 int&nbsp;int8)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i37">
+<tr class="altColor" id="i36">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_3267()">method_3267</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i38">
+<tr class="rowColor" id="i37">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onResized(int,int)">onResized</a></span>&#8203;(int&nbsp;int2,
 int&nbsp;int3)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i39">
+<tr class="altColor" id="i38">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#playSong(net.minecraft.sound.SoundEvent,net.minecraft.util.math.BlockPos)">playSong</a></span>&#8203;(<a href="../../sound/SoundEvent.html" title="class in net.minecraft.sound">SoundEvent</a>&nbsp;song,
 <a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;songPosition)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i40">
+<tr class="rowColor" id="i39">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#processGlobalEvent(int,net.minecraft.util.math.BlockPos,int)">processGlobalEvent</a></span>&#8203;(int&nbsp;eventId,
 <a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
 int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i41">
+<tr class="altColor" id="i40">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#processWorldEvent(net.minecraft.entity.player.PlayerEntity,int,net.minecraft.util.math.BlockPos,int)">processWorldEvent</a></span>&#8203;(<a href="../../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;source,
 int&nbsp;eventId,
@@ -885,17 +886,17 @@ int&nbsp;eventId,
 int&nbsp;data)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i42">
+<tr class="rowColor" id="i41">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#reload()">reload</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i43">
+<tr class="altColor" id="i42">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeBlockBreakingInfo(net.minecraft.client.render.BlockBreakingInfo)">removeBlockBreakingInfo</a></span>&#8203;(<a href="BlockBreakingInfo.html" title="class in net.minecraft.client.render">BlockBreakingInfo</a>&nbsp;blockBreakingInfo)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i44">
+<tr class="rowColor" id="i43">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#render(net.minecraft.client.util.math.MatrixStack,float,long,boolean,net.minecraft.client.render.Camera,net.minecraft.client.render.GameRenderer,net.minecraft.client.render.LightmapTextureManager,net.minecraft.util.math.Matrix4f)">render</a></span>&#8203;(<a href="../util/math/MatrixStack.html" title="class in net.minecraft.client.util.math">MatrixStack</a>&nbsp;matrices,
 float&nbsp;tickDelta,
@@ -907,12 +908,12 @@ boolean&nbsp;renderBlockOutline,
 <a href="../../util/math/Matrix4f.html" title="class in net.minecraft.util.math">Matrix4f</a>&nbsp;matrix4f)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i45">
+<tr class="altColor" id="i44">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#renderChunkDebugInfo(net.minecraft.client.render.Camera)">renderChunkDebugInfo</a></span>&#8203;(<a href="Camera.html" title="class in net.minecraft.client.render">Camera</a>&nbsp;camera)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i46">
+<tr class="rowColor" id="i45">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#renderClouds(net.minecraft.client.render.BufferBuilder,double,double,double,net.minecraft.util.math.Vec3d)">renderClouds</a></span>&#8203;(<a href="BufferBuilder.html" title="class in net.minecraft.client.render">BufferBuilder</a>&nbsp;builder,
 double&nbsp;x,
@@ -921,7 +922,7 @@ double&nbsp;z,
 <a href="../../util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;color)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i47">
+<tr class="altColor" id="i46">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#renderClouds(net.minecraft.client.util.math.MatrixStack,float,double,double,double)">renderClouds</a></span>&#8203;(<a href="../util/math/MatrixStack.html" title="class in net.minecraft.client.util.math">MatrixStack</a>&nbsp;matrices,
 float&nbsp;tickDelta,
@@ -930,17 +931,17 @@ double&nbsp;cameraY,
 double&nbsp;cameraZ)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i48">
+<tr class="rowColor" id="i47">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#renderDarkSky()">renderDarkSky</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i49">
+<tr class="altColor" id="i48">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#renderEndSky(net.minecraft.client.util.math.MatrixStack)">renderEndSky</a></span>&#8203;(<a href="../util/math/MatrixStack.html" title="class in net.minecraft.client.util.math">MatrixStack</a>&nbsp;matrices)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i50">
+<tr class="rowColor" id="i49">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#renderEntity(net.minecraft.entity.Entity,double,double,double,float,net.minecraft.client.util.math.MatrixStack,net.minecraft.client.render.VertexConsumerProvider)">renderEntity</a></span>&#8203;(<a href="../../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
 double&nbsp;cameraX,
@@ -951,7 +952,7 @@ float&nbsp;tickDelta,
 <a href="VertexConsumerProvider.html" title="interface in net.minecraft.client.render">VertexConsumerProvider</a>&nbsp;vertexConsumers)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i51">
+<tr class="altColor" id="i50">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#renderLayer(net.minecraft.client.render.RenderLayer,net.minecraft.client.util.math.MatrixStack,double,double,double)">renderLayer</a></span>&#8203;(<a href="RenderLayer.html" title="class in net.minecraft.client.render">RenderLayer</a>&nbsp;renderLayer,
 <a href="../util/math/MatrixStack.html" title="class in net.minecraft.client.util.math">MatrixStack</a>&nbsp;matrixStack,
@@ -960,35 +961,35 @@ double&nbsp;double3,
 double&nbsp;double4)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i52">
+<tr class="rowColor" id="i51">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#renderLightSky()">renderLightSky</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i53">
+<tr class="altColor" id="i52">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#renderSky(net.minecraft.client.util.math.MatrixStack,float)">renderSky</a></span>&#8203;(<a href="../util/math/MatrixStack.html" title="class in net.minecraft.client.util.math">MatrixStack</a>&nbsp;matrices,
 float&nbsp;tickDelta)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i54">
+<tr class="rowColor" id="i53">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#renderSkyHalf(net.minecraft.client.render.BufferBuilder,float,boolean)">renderSkyHalf</a></span>&#8203;(<a href="BufferBuilder.html" title="class in net.minecraft.client.render">BufferBuilder</a>&nbsp;buffer,
 float&nbsp;y,
 boolean&nbsp;bottom)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i55">
+<tr class="altColor" id="i54">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#renderStars()">renderStars</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i56">
+<tr class="rowColor" id="i55">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#renderStars(net.minecraft.client.render.BufferBuilder)">renderStars</a></span>&#8203;(<a href="BufferBuilder.html" title="class in net.minecraft.client.render">BufferBuilder</a>&nbsp;buffer)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i57">
+<tr class="altColor" id="i56">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#renderWeather(net.minecraft.client.render.LightmapTextureManager,float,double,double,double)">renderWeather</a></span>&#8203;(<a href="LightmapTextureManager.html" title="class in net.minecraft.client.render">LightmapTextureManager</a>&nbsp;manager,
 float&nbsp;float2,
@@ -997,31 +998,31 @@ double&nbsp;double3,
 double&nbsp;double4)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i58">
+<tr class="rowColor" id="i57">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#renderWorldBorder(net.minecraft.client.render.Camera)">renderWorldBorder</a></span>&#8203;(<a href="Camera.html" title="class in net.minecraft.client.render">Camera</a>&nbsp;camera)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i59">
+<tr class="altColor" id="i58">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#resetTransparencyShader()">resetTransparencyShader</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i60">
+<tr class="rowColor" id="i59">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scheduleBlockRender(int,int,int)">scheduleBlockRender</a></span>&#8203;(int&nbsp;x,
 int&nbsp;y,
 int&nbsp;z)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i61">
+<tr class="altColor" id="i60">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scheduleBlockRenders(int,int,int)">scheduleBlockRenders</a></span>&#8203;(int&nbsp;x,
 int&nbsp;y,
 int&nbsp;z)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i62">
+<tr class="rowColor" id="i61">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scheduleBlockRenders(int,int,int,int,int,int)">scheduleBlockRenders</a></span>&#8203;(int&nbsp;minX,
 int&nbsp;minY,
@@ -1031,14 +1032,14 @@ int&nbsp;maxY,
 int&nbsp;maxZ)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i63">
+<tr class="altColor" id="i62">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scheduleBlockRerenderIfNeeded(net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.block.BlockState)">scheduleBlockRerenderIfNeeded</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
 <a href="../../block/BlockState.html" title="class in net.minecraft.block">BlockState</a>&nbsp;old,
 <a href="../../block/BlockState.html" title="class in net.minecraft.block">BlockState</a>&nbsp;updated)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i64">
+<tr class="rowColor" id="i63">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scheduleChunkRender(int,int,int,boolean)">scheduleChunkRender</a></span>&#8203;(int&nbsp;x,
 int&nbsp;y,
@@ -1046,25 +1047,25 @@ int&nbsp;z,
 boolean&nbsp;important)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i65">
+<tr class="altColor" id="i64">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scheduleSectionRender(net.minecraft.util.math.BlockPos,boolean)">scheduleSectionRender</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
 boolean&nbsp;important)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i66">
+<tr class="rowColor" id="i65">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scheduleTerrainUpdate()">scheduleTerrainUpdate</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i67">
+<tr class="altColor" id="i66">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setBlockBreakingInfo(int,net.minecraft.util.math.BlockPos,int)">setBlockBreakingInfo</a></span>&#8203;(int&nbsp;entityId,
 <a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
 int&nbsp;stage)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i68">
+<tr class="rowColor" id="i67">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setupTerrain(net.minecraft.client.render.Camera,net.minecraft.client.render.Frustum,boolean,int,boolean)">setupTerrain</a></span>&#8203;(<a href="Camera.html" title="class in net.minecraft.client.render">Camera</a>&nbsp;camera,
 <a href="Frustum.html" title="class in net.minecraft.client.render">Frustum</a>&nbsp;frustum,
@@ -1073,12 +1074,12 @@ int&nbsp;frame,
 boolean&nbsp;spectator)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i69">
+<tr class="altColor" id="i68">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setWorld(net.minecraft.client.world.ClientWorld)">setWorld</a></span>&#8203;(<a href="../world/ClientWorld.html" title="class in net.minecraft.client.world">ClientWorld</a>&nbsp;clientWorld)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i70">
+<tr class="rowColor" id="i69">
 <td class="colFirst"><code>private <a href="../particle/Particle.html" title="class in net.minecraft.client.particle">Particle</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#spawnParticle(net.minecraft.particle.ParticleEffect,boolean,boolean,double,double,double,double,double,double)">spawnParticle</a></span>&#8203;(<a href="../../particle/ParticleEffect.html" title="interface in net.minecraft.particle">ParticleEffect</a>&nbsp;parameters,
 boolean&nbsp;alwaysSpawn,
@@ -1091,7 +1092,7 @@ double&nbsp;velocityY,
 double&nbsp;velocityZ)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i71">
+<tr class="altColor" id="i70">
 <td class="colFirst"><code>private <a href="../particle/Particle.html" title="class in net.minecraft.client.particle">Particle</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#spawnParticle(net.minecraft.particle.ParticleEffect,boolean,double,double,double,double,double,double)">spawnParticle</a></span>&#8203;(<a href="../../particle/ParticleEffect.html" title="interface in net.minecraft.particle">ParticleEffect</a>&nbsp;parameters,
 boolean&nbsp;alwaysSpawn,
@@ -1103,9 +1104,14 @@ double&nbsp;velocityY,
 double&nbsp;velocityZ)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i72">
+<tr class="rowColor" id="i71">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tick()">tick</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i72">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tickRainSplashing(net.minecraft.client.render.Camera)">tickRainSplashing</a></span>&#8203;(<a href="Camera.html" title="class in net.minecraft.client.render">Camera</a>&nbsp;camera)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i73">
@@ -1639,8 +1645,8 @@ double&nbsp;double4)</span></div>
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="method_22713(net.minecraft.client.render.Camera)">method_22713</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">method_22713</span>&#8203;(<span class="arguments"><a href="Camera.html" title="class in net.minecraft.client.render">Camera</a>&nbsp;camera)</span></div>
+<h3><a id="tickRainSplashing(net.minecraft.client.render.Camera)">tickRainSplashing</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">tickRainSplashing</span>&#8203;(<span class="arguments"><a href="Camera.html" title="class in net.minecraft.client.render">Camera</a>&nbsp;camera)</span></div>
 </section>
 </li>
 <li class="blockList">
@@ -1983,30 +1989,36 @@ float&nbsp;float5)</span></div>
 <li class="blockList">
 <section class="detail">
 <h3><a id="drawBox(net.minecraft.client.util.math.MatrixStack,net.minecraft.client.render.VertexConsumer,net.minecraft.util.math.Box,float,float,float,float)">drawBox</a></h3>
-<div class="memberSignature"><span class="modifiers">public static</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">drawBox</span>&#8203;(<span class="arguments"><a href="../util/math/MatrixStack.html" title="class in net.minecraft.client.util.math">MatrixStack</a>&nbsp;matrixStack,
+<div class="memberSignature"><span class="modifiers">public static</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">drawBox</span>&#8203;(<span class="arguments"><a href="../util/math/MatrixStack.html" title="class in net.minecraft.client.util.math">MatrixStack</a>&nbsp;matrices,
 <a href="VertexConsumer.html" title="interface in net.minecraft.client.render">VertexConsumer</a>&nbsp;vertexConsumer,
 <a href="../../util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box,
-float&nbsp;float2,
-float&nbsp;float3,
-float&nbsp;float4,
-float&nbsp;float5)</span></div>
+float&nbsp;red,
+float&nbsp;green,
+float&nbsp;blue,
+float&nbsp;alpha)</span></div>
+<div class="block">Draws a box.
+
+ <p>Note the coordinates the box spans are relative to current translation of the matrices.</div>
 </section>
 </li>
 <li class="blockList">
 <section class="detail">
 <h3><a id="drawBox(net.minecraft.client.util.math.MatrixStack,net.minecraft.client.render.VertexConsumer,double,double,double,double,double,double,float,float,float,float)">drawBox</a></h3>
-<div class="memberSignature"><span class="modifiers">public static</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">drawBox</span>&#8203;(<span class="arguments"><a href="../util/math/MatrixStack.html" title="class in net.minecraft.client.util.math">MatrixStack</a>&nbsp;matrixStack,
+<div class="memberSignature"><span class="modifiers">public static</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">drawBox</span>&#8203;(<span class="arguments"><a href="../util/math/MatrixStack.html" title="class in net.minecraft.client.util.math">MatrixStack</a>&nbsp;matrices,
 <a href="VertexConsumer.html" title="interface in net.minecraft.client.render">VertexConsumer</a>&nbsp;vertexConsumer,
-double&nbsp;double2,
-double&nbsp;double3,
-double&nbsp;double4,
-double&nbsp;double5,
-double&nbsp;double6,
-double&nbsp;double7,
-float&nbsp;float2,
-float&nbsp;float3,
-float&nbsp;float4,
-float&nbsp;float5)</span></div>
+double&nbsp;x1,
+double&nbsp;y1,
+double&nbsp;z1,
+double&nbsp;x2,
+double&nbsp;y2,
+double&nbsp;z2,
+float&nbsp;red,
+float&nbsp;green,
+float&nbsp;blue,
+float&nbsp;alpha)</span></div>
+<div class="block">Draws a box spanning from [x1,y1,z1] to [x2,y2,z2].
+
+ <p>Note the coordinates the box spans are relative to current translation of the matrices.</div>
 </section>
 </li>
 <li class="blockList">
@@ -2021,12 +2033,16 @@ double&nbsp;x2,
 double&nbsp;y2,
 double&nbsp;z2,
 float&nbsp;red,
-float&nbsp;float2,
-float&nbsp;float3,
-float&nbsp;alpha,
-float&nbsp;float4,
 float&nbsp;green,
-float&nbsp;blue)</span></div>
+float&nbsp;blue,
+float&nbsp;alpha,
+float&nbsp;xAxisRed,
+float&nbsp;yAxisGreen,
+float&nbsp;zAxisBlue)</span></div>
+<div class="block">Draws a box spanning from [x1,y1,z1] to [x2,y2,z2].
+ The 3 axes centered at [x1,y1,z1] may be colored differently using xAxisRed, yAxisGreen, and zAxisBlue.
+
+ <p>Note the coordinates the box spans are relative to current translation of the matrices.</div>
 </section>
 </li>
 <li class="blockList">

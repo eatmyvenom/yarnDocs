@@ -170,7 +170,7 @@ implements <a href="TradeOffers.Factory.html" title="interface in net.minecraft.
 <tbody>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int,net.minecraft.world.gen.feature.StructureFeature,net.minecraft.item.map.MapIcon.Type,int,int)">SellMapFactory</a></span>&#8203;(int&nbsp;price,
-<a href="../world/gen/feature/StructureFeature.html" title="class in net.minecraft.world.gen.feature">StructureFeature</a>&lt;?&gt;&nbsp;structureFeature,
+<a href="../world/gen/feature/StructureFeature.html" title="class in net.minecraft.world.gen.feature">StructureFeature</a>&lt;?&gt;&nbsp;feature,
 <a href="../item/map/MapIcon.Type.html" title="enum in net.minecraft.item.map">MapIcon.Type</a>&nbsp;iconType,
 int&nbsp;maxUses,
 int&nbsp;experience)</code></th>
@@ -203,7 +203,9 @@ int&nbsp;experience)</code></th>
 <td class="colFirst"><code><a href="TradeOffer.html" title="class in net.minecraft.village">TradeOffer</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#create(net.minecraft.entity.Entity,java.util.Random)">create</a></span>&#8203;(<a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Creates a trade offer.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -271,7 +273,7 @@ int&nbsp;experience)</code></th>
 <section class="detail">
 <h3><a id="&lt;init&gt;(int,net.minecraft.world.gen.feature.StructureFeature,net.minecraft.item.map.MapIcon.Type,int,int)">SellMapFactory</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">SellMapFactory</span>&#8203;(<span class="arguments">int&nbsp;price,
-<a href="../world/gen/feature/StructureFeature.html" title="class in net.minecraft.world.gen.feature">StructureFeature</a>&lt;?&gt;&nbsp;structureFeature,
+<a href="../world/gen/feature/StructureFeature.html" title="class in net.minecraft.world.gen.feature">StructureFeature</a>&lt;?&gt;&nbsp;feature,
 <a href="../item/map/MapIcon.Type.html" title="enum in net.minecraft.item.map">MapIcon.Type</a>&nbsp;iconType,
 int&nbsp;maxUses,
 int&nbsp;experience)</span></div>
@@ -293,9 +295,12 @@ int&nbsp;experience)</span></div>
 <div class="memberSignature"><span class="annotations"><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation" class="externalLink">@Nullable</a>
 </span><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="TradeOffer.html" title="class in net.minecraft.village">TradeOffer</a></span>&nbsp;<span class="memberName">create</span>&#8203;(<span class="arguments"><a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random)</span></div>
+<div class="block">Creates a trade offer.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="TradeOffers.Factory.html#create(net.minecraft.entity.Entity,java.util.Random)">create</a></code>&nbsp;in interface&nbsp;<code><a href="TradeOffers.Factory.html" title="interface in net.minecraft.village">TradeOffers.Factory</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new trade offer, or <code>null</code> if none should be created</dd>
 </dl>
 </section>
 </li>

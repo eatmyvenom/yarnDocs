@@ -19,7 +19,7 @@
 <script type="text/javascript" src="../../../../../../script-dir/jquery-ui.js"></script>
 </head>
 <body class="class-declaration">
-<script type="text/javascript">var data = {"i0":10,"i1":6,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10};
+<script type="text/javascript">var data = {"i0":10,"i1":6,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -456,13 +456,18 @@ int&nbsp;modifiers)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i15">
+<td class="colFirst"><code>private void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_30107(int)">method_30107</a></span>&#8203;(int&nbsp;int2)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i16">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mouseClicked(double,double,int)">mouseClicked</a></span>&#8203;(double&nbsp;mouseX,
 double&nbsp;mouseY,
 int&nbsp;button)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i16">
+<tr class="rowColor" id="i17">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mouseDragged(double,double,int,double,double)">mouseDragged</a></span>&#8203;(double&nbsp;mouseX,
 double&nbsp;mouseY,
@@ -471,14 +476,14 @@ double&nbsp;deltaX,
 double&nbsp;deltaY)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i17">
+<tr class="altColor" id="i18">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mouseReleased(double,double,int)">mouseReleased</a></span>&#8203;(double&nbsp;mouseX,
 double&nbsp;mouseY,
 int&nbsp;button)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i18">
+<tr class="rowColor" id="i19">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onMouseClick(net.minecraft.screen.slot.Slot,int,int,net.minecraft.screen.slot.SlotActionType)">onMouseClick</a></span>&#8203;(<a href="../../../../screen/slot/Slot.html" title="class in net.minecraft.screen.slot">Slot</a>&nbsp;slot,
 int&nbsp;invSlot,
@@ -486,12 +491,12 @@ int&nbsp;clickData,
 <a href="../../../../screen/slot/SlotActionType.html" title="enum in net.minecraft.screen.slot">SlotActionType</a>&nbsp;actionType)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i19">
+<tr class="altColor" id="i20">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removed()">removed</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i20">
+<tr class="rowColor" id="i21">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#render(net.minecraft.client.util.math.MatrixStack,int,int,float)">render</a></span>&#8203;(<a href="../../../util/math/MatrixStack.html" title="class in net.minecraft.client.util.math">MatrixStack</a>&nbsp;matrices,
 int&nbsp;mouseX,
@@ -499,12 +504,12 @@ int&nbsp;mouseY,
 float&nbsp;delta)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i21">
+<tr class="altColor" id="i22">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#shouldCloseOnEsc()">shouldCloseOnEsc</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i22">
+<tr class="rowColor" id="i23">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tick()">tick</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -612,6 +617,41 @@ float&nbsp;delta)</code></th>
 </li>
 <li class="blockList">
 <section class="detail">
+<h3><a id="focusedSlot">focusedSlot</a></h3>
+<div class="memberSignature"><span class="annotations"><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation" class="externalLink">@Nullable</a>
+</span><span class="modifiers">protected</span>&nbsp;<span class="returnType"><a href="../../../../screen/slot/Slot.html" title="class in net.minecraft.screen.slot">Slot</a></span>&nbsp;<span class="memberName">focusedSlot</span></div>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="touchDragSlotStart">touchDragSlotStart</a></h3>
+<div class="memberSignature"><span class="annotations"><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation" class="externalLink">@Nullable</a>
+</span><span class="modifiers">private</span>&nbsp;<span class="returnType"><a href="../../../../screen/slot/Slot.html" title="class in net.minecraft.screen.slot">Slot</a></span>&nbsp;<span class="memberName">touchDragSlotStart</span></div>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="touchDropOriginSlot">touchDropOriginSlot</a></h3>
+<div class="memberSignature"><span class="annotations"><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation" class="externalLink">@Nullable</a>
+</span><span class="modifiers">private</span>&nbsp;<span class="returnType"><a href="../../../../screen/slot/Slot.html" title="class in net.minecraft.screen.slot">Slot</a></span>&nbsp;<span class="memberName">touchDropOriginSlot</span></div>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="touchHoveredSlot">touchHoveredSlot</a></h3>
+<div class="memberSignature"><span class="annotations"><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation" class="externalLink">@Nullable</a>
+</span><span class="modifiers">private</span>&nbsp;<span class="returnType"><a href="../../../../screen/slot/Slot.html" title="class in net.minecraft.screen.slot">Slot</a></span>&nbsp;<span class="memberName">touchHoveredSlot</span></div>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="lastClickedSlot">lastClickedSlot</a></h3>
+<div class="memberSignature"><span class="annotations"><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation" class="externalLink">@Nullable</a>
+</span><span class="modifiers">private</span>&nbsp;<span class="returnType"><a href="../../../../screen/slot/Slot.html" title="class in net.minecraft.screen.slot">Slot</a></span>&nbsp;<span class="memberName">lastClickedSlot</span></div>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
 <h3><a id="x">x</a></h3>
 <div class="memberSignature"><span class="modifiers">protected</span>&nbsp;<span class="returnType">int</span>&nbsp;<span class="memberName">x</span></div>
 </section>
@@ -620,18 +660,6 @@ float&nbsp;delta)</code></th>
 <section class="detail">
 <h3><a id="y">y</a></h3>
 <div class="memberSignature"><span class="modifiers">protected</span>&nbsp;<span class="returnType">int</span>&nbsp;<span class="memberName">y</span></div>
-</section>
-</li>
-<li class="blockList">
-<section class="detail">
-<h3><a id="focusedSlot">focusedSlot</a></h3>
-<div class="memberSignature"><span class="modifiers">protected</span>&nbsp;<span class="returnType"><a href="../../../../screen/slot/Slot.html" title="class in net.minecraft.screen.slot">Slot</a></span>&nbsp;<span class="memberName">focusedSlot</span></div>
-</section>
-</li>
-<li class="blockList">
-<section class="detail">
-<h3><a id="touchDragSlotStart">touchDragSlotStart</a></h3>
-<div class="memberSignature"><span class="modifiers">private</span>&nbsp;<span class="returnType"><a href="../../../../screen/slot/Slot.html" title="class in net.minecraft.screen.slot">Slot</a></span>&nbsp;<span class="memberName">touchDragSlotStart</span></div>
 </section>
 </li>
 <li class="blockList">
@@ -660,12 +688,6 @@ float&nbsp;delta)</code></th>
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="touchDropOriginSlot">touchDropOriginSlot</a></h3>
-<div class="memberSignature"><span class="modifiers">private</span>&nbsp;<span class="returnType"><a href="../../../../screen/slot/Slot.html" title="class in net.minecraft.screen.slot">Slot</a></span>&nbsp;<span class="memberName">touchDropOriginSlot</span></div>
-</section>
-</li>
-<li class="blockList">
-<section class="detail">
 <h3><a id="touchDropTime">touchDropTime</a></h3>
 <div class="memberSignature"><span class="modifiers">private</span>&nbsp;<span class="returnType">long</span>&nbsp;<span class="memberName">touchDropTime</span></div>
 </section>
@@ -674,12 +696,6 @@ float&nbsp;delta)</code></th>
 <section class="detail">
 <h3><a id="touchDropReturningStack">touchDropReturningStack</a></h3>
 <div class="memberSignature"><span class="modifiers">private</span>&nbsp;<span class="returnType"><a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></span>&nbsp;<span class="memberName">touchDropReturningStack</span></div>
-</section>
-</li>
-<li class="blockList">
-<section class="detail">
-<h3><a id="touchHoveredSlot">touchHoveredSlot</a></h3>
-<div class="memberSignature"><span class="modifiers">private</span>&nbsp;<span class="returnType"><a href="../../../../screen/slot/Slot.html" title="class in net.minecraft.screen.slot">Slot</a></span>&nbsp;<span class="memberName">touchHoveredSlot</span></div>
 </section>
 </li>
 <li class="blockList">
@@ -728,12 +744,6 @@ float&nbsp;delta)</code></th>
 <section class="detail">
 <h3><a id="lastButtonClickTime">lastButtonClickTime</a></h3>
 <div class="memberSignature"><span class="modifiers">private</span>&nbsp;<span class="returnType">long</span>&nbsp;<span class="memberName">lastButtonClickTime</span></div>
-</section>
-</li>
-<li class="blockList">
-<section class="detail">
-<h3><a id="lastClickedSlot">lastClickedSlot</a></h3>
-<div class="memberSignature"><span class="modifiers">private</span>&nbsp;<span class="returnType"><a href="../../../../screen/slot/Slot.html" title="class in net.minecraft.screen.slot">Slot</a></span>&nbsp;<span class="memberName">lastClickedSlot</span></div>
 </section>
 </li>
 <li class="blockList">
@@ -859,7 +869,8 @@ int&nbsp;mouseY)</span></div>
 <li class="blockList">
 <section class="detail">
 <h3><a id="getSlotAt(double,double)">getSlotAt</a></h3>
-<div class="memberSignature"><span class="modifiers">private</span>&nbsp;<span class="returnType"><a href="../../../../screen/slot/Slot.html" title="class in net.minecraft.screen.slot">Slot</a></span>&nbsp;<span class="memberName">getSlotAt</span>&#8203;(<span class="arguments">double&nbsp;xPosition,
+<div class="memberSignature"><span class="annotations"><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation" class="externalLink">@Nullable</a>
+</span><span class="modifiers">private</span>&nbsp;<span class="returnType"><a href="../../../../screen/slot/Slot.html" title="class in net.minecraft.screen.slot">Slot</a></span>&nbsp;<span class="memberName">getSlotAt</span>&#8203;(<span class="arguments">double&nbsp;xPosition,
 double&nbsp;yPosition)</span></div>
 </section>
 </li>
@@ -875,6 +886,12 @@ int&nbsp;button)</span></div>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../ParentElement.html#mouseClicked(double,double,int)">mouseClicked</a></code>&nbsp;in interface&nbsp;<code><a href="../../ParentElement.html" title="interface in net.minecraft.client.gui">ParentElement</a></code></dd>
 </dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="method_30107(int)">method_30107</a></h3>
+<div class="memberSignature"><span class="modifiers">private</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">method_30107</span>&#8203;(<span class="arguments">int&nbsp;int2)</span></div>
 </section>
 </li>
 <li class="blockList">

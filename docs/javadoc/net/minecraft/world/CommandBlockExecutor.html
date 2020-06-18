@@ -283,7 +283,7 @@ implements <a href="../server/command/CommandOutput.html" title="interface in ne
 <tr class="altColor" id="i12">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendSystemMessage(net.minecraft.text.Text,java.util.UUID)">sendSystemMessage</a></span>&#8203;(<a href="../text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;message,
-<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uUID)</code></th>
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;senderUuid)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i13">
@@ -392,7 +392,8 @@ implements <a href="../server/command/CommandOutput.html" title="interface in ne
 <li class="blockList">
 <section class="detail">
 <h3><a id="lastOutput">lastOutput</a></h3>
-<div class="memberSignature"><span class="modifiers">private</span>&nbsp;<span class="returnType"><a href="../text/Text.html" title="interface in net.minecraft.text">Text</a></span>&nbsp;<span class="memberName">lastOutput</span></div>
+<div class="memberSignature"><span class="annotations"><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation" class="externalLink">@Nullable</a>
+</span><span class="modifiers">private</span>&nbsp;<span class="returnType"><a href="../text/Text.html" title="interface in net.minecraft.text">Text</a></span>&nbsp;<span class="memberName">lastOutput</span></div>
 </section>
 </li>
 <li class="blockList">
@@ -498,7 +499,7 @@ implements <a href="../server/command/CommandOutput.html" title="interface in ne
 <section class="detail">
 <h3><a id="sendSystemMessage(net.minecraft.text.Text,java.util.UUID)">sendSystemMessage</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">sendSystemMessage</span>&#8203;(<span class="arguments"><a href="../text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;message,
-<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uUID)</span></div>
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;senderUuid)</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../server/command/CommandOutput.html#sendSystemMessage(net.minecraft.text.Text,java.util.UUID)">sendSystemMessage</a></code>&nbsp;in interface&nbsp;<code><a href="../server/command/CommandOutput.html" title="interface in net.minecraft.server.command">CommandOutput</a></code></dd>

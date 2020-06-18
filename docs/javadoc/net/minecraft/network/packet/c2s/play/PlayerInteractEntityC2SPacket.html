@@ -151,18 +151,18 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_25660">field_25660</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>private <a href="../../../../util/Hand.html" title="enum in net.minecraft.util">Hand</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hand">hand</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private <a href="../../../../util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hitPos">hitPos</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#playerSneaking">playerSneaking</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -196,20 +196,21 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.entity.Entity)">PlayerInteractEntityC2SPacket</a></span>&#8203;(<a href="../../../../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.entity.Entity,boolean)">PlayerInteractEntityC2SPacket</a></span>&#8203;(<a href="../../../../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;target,
+boolean&nbsp;playerSneaking)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.entity.Entity,net.minecraft.util.Hand,boolean)">PlayerInteractEntityC2SPacket</a></span>&#8203;(<a href="../../../../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
 <a href="../../../../util/Hand.html" title="enum in net.minecraft.util">Hand</a>&nbsp;hand,
-boolean&nbsp;bool)</code></th>
+boolean&nbsp;playerSneaking)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.entity.Entity,net.minecraft.util.Hand,net.minecraft.util.math.Vec3d,boolean)">PlayerInteractEntityC2SPacket</a></span>&#8203;(<a href="../../../../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
 <a href="../../../../util/Hand.html" title="enum in net.minecraft.util">Hand</a>&nbsp;hand,
-<a href="../../../../util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;vec3d,
-boolean&nbsp;bool)</code></th>
+<a href="../../../../util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;hitPos,
+boolean&nbsp;playerSneaking)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -262,7 +263,7 @@ boolean&nbsp;bool)</code></th>
 </tr>
 <tr class="rowColor" id="i5">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_30007()">method_30007</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isPlayerSneaking()">isPlayerSneaking</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i6">
@@ -328,8 +329,8 @@ boolean&nbsp;bool)</code></th>
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="field_25660">field_25660</a></h3>
-<div class="memberSignature"><span class="modifiers">private</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">field_25660</span></div>
+<h3><a id="playerSneaking">playerSneaking</a></h3>
+<div class="memberSignature"><span class="modifiers">private</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">playerSneaking</span></div>
 </section>
 </li>
 </ul>
@@ -350,8 +351,10 @@ boolean&nbsp;bool)</code></th>
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="&lt;init&gt;(net.minecraft.entity.Entity)">PlayerInteractEntityC2SPacket</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">PlayerInteractEntityC2SPacket</span>&#8203;(<span class="arguments"><a href="../../../../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</span></div>
+<h3><a id="&lt;init&gt;(net.minecraft.entity.Entity,boolean)">PlayerInteractEntityC2SPacket</a></h3>
+<div class="memberSignature"><span class="annotations">@Environment(CLIENT)
+</span><span class="modifiers">public</span>&nbsp;<span class="memberName">PlayerInteractEntityC2SPacket</span>&#8203;(<span class="arguments"><a href="../../../../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;target,
+boolean&nbsp;playerSneaking)</span></div>
 </section>
 </li>
 <li class="blockList">
@@ -360,7 +363,7 @@ boolean&nbsp;bool)</code></th>
 <div class="memberSignature"><span class="annotations">@Environment(CLIENT)
 </span><span class="modifiers">public</span>&nbsp;<span class="memberName">PlayerInteractEntityC2SPacket</span>&#8203;(<span class="arguments"><a href="../../../../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
 <a href="../../../../util/Hand.html" title="enum in net.minecraft.util">Hand</a>&nbsp;hand,
-boolean&nbsp;bool)</span></div>
+boolean&nbsp;playerSneaking)</span></div>
 </section>
 </li>
 <li class="blockList">
@@ -369,8 +372,8 @@ boolean&nbsp;bool)</span></div>
 <div class="memberSignature"><span class="annotations">@Environment(CLIENT)
 </span><span class="modifiers">public</span>&nbsp;<span class="memberName">PlayerInteractEntityC2SPacket</span>&#8203;(<span class="arguments"><a href="../../../../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
 <a href="../../../../util/Hand.html" title="enum in net.minecraft.util">Hand</a>&nbsp;hand,
-<a href="../../../../util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;vec3d,
-boolean&nbsp;bool)</span></div>
+<a href="../../../../util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;hitPos,
+boolean&nbsp;playerSneaking)</span></div>
 </section>
 </li>
 </ul>
@@ -446,8 +449,8 @@ boolean&nbsp;bool)</span></div>
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="method_30007()">method_30007</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">method_30007</span>()</div>
+<h3><a id="isPlayerSneaking()">isPlayerSneaking</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">isPlayerSneaking</span>()</div>
 </section>
 </li>
 </ul>

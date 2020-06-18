@@ -19,7 +19,7 @@
 <script type="text/javascript" src="../../../script-dir/jquery-ui.js"></script>
 </head>
 <body class="class-declaration">
-<script type="text/javascript">var data = {"i0":18,"i1":18,"i2":18,"i3":18,"i4":18,"i5":18,"i6":18,"i7":18,"i8":6,"i9":6,"i10":18,"i11":18};
+<script type="text/javascript">var data = {"i0":18,"i1":18,"i2":18,"i3":18,"i4":18,"i5":18,"i6":18,"i7":6,"i8":6,"i9":6,"i10":18,"i11":18,"i12":18};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -167,7 +167,7 @@ extends <a href="BlockView.html" title="interface in net.minecraft.world">BlockV
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i7">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../util/shape/VoxelShape.html" title="class in net.minecraft.util.shape">VoxelShape</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../util/shape/VoxelShape.html" title="class in net.minecraft.util.shape">VoxelShape</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEntityCollisions(net.minecraft.entity.Entity,net.minecraft.util.math.Box,java.util.function.Predicate)">getEntityCollisions</a></span>&#8203;(<a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
 <a href="../util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box,
 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&gt;&nbsp;predicate)</code></th>
@@ -193,6 +193,13 @@ int&nbsp;chunkZ)</code></th>
 <td class="colFirst"><code>default boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#intersectsEntities(net.minecraft.entity.Entity,net.minecraft.util.shape.VoxelShape)">intersectsEntities</a></span>&#8203;(<a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;except,
 <a href="../util/shape/VoxelShape.html" title="class in net.minecraft.util.shape">VoxelShape</a>&nbsp;shape)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i12">
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../util/shape/VoxelShape.html" title="class in net.minecraft.util.shape">VoxelShape</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_30030(net.minecraft.entity.Entity,net.minecraft.util.math.Box,java.util.function.BiPredicate)">method_30030</a></span>&#8203;(<a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
+<a href="../util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiPredicate</a>&lt;<a href="../block/BlockState.html" title="class in net.minecraft.block">BlockState</a>,&#8203;<a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&gt;&nbsp;biPredicate)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -284,7 +291,7 @@ int&nbsp;chunkZ)</span></div>
 <li class="blockList">
 <section class="detail">
 <h3><a id="getEntityCollisions(net.minecraft.entity.Entity,net.minecraft.util.math.Box,java.util.function.Predicate)">getEntityCollisions</a></h3>
-<div class="memberSignature"><span class="modifiers">default</span>&nbsp;<span class="returnType"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../util/shape/VoxelShape.html" title="class in net.minecraft.util.shape">VoxelShape</a>&gt;</span>&nbsp;<span class="memberName">getEntityCollisions</span>&#8203;(<span class="arguments"><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation" class="externalLink">@Nullable</a>
+<div class="memberSignature"><span class="returnType"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../util/shape/VoxelShape.html" title="class in net.minecraft.util.shape">VoxelShape</a>&gt;</span>&nbsp;<span class="memberName">getEntityCollisions</span>&#8203;(<span class="arguments"><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation" class="externalLink">@Nullable</a>
 <a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
 <a href="../util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box,
 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&gt;&nbsp;predicate)</span></div>
@@ -305,6 +312,15 @@ int&nbsp;chunkZ)</span></div>
 <div class="memberSignature"><span class="modifiers">default</span>&nbsp;<span class="returnType"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../util/shape/VoxelShape.html" title="class in net.minecraft.util.shape">VoxelShape</a>&gt;</span>&nbsp;<span class="memberName">getBlockCollisions</span>&#8203;(<span class="arguments"><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation" class="externalLink">@Nullable</a>
 <a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
 <a href="../util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box)</span></div>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="method_30030(net.minecraft.entity.Entity,net.minecraft.util.math.Box,java.util.function.BiPredicate)">method_30030</a></h3>
+<div class="memberSignature"><span class="modifiers">default</span>&nbsp;<span class="returnType"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../util/shape/VoxelShape.html" title="class in net.minecraft.util.shape">VoxelShape</a>&gt;</span>&nbsp;<span class="memberName">method_30030</span>&#8203;(<span class="arguments"><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation" class="externalLink">@Nullable</a>
+<a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
+<a href="../util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiPredicate</a>&lt;<a href="../block/BlockState.html" title="class in net.minecraft.block">BlockState</a>,&#8203;<a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&gt;&nbsp;biPredicate)</span></div>
 </section>
 </li>
 </ul>

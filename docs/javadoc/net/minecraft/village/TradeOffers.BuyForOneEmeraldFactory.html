@@ -169,7 +169,7 @@ implements <a href="TradeOffers.Factory.html" title="interface in net.minecraft.
 </thead>
 <tbody>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.item.ItemConvertible,int,int,int)">BuyForOneEmeraldFactory</a></span>&#8203;(<a href="../item/ItemConvertible.html" title="interface in net.minecraft.item">ItemConvertible</a>&nbsp;itemConvertible,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.item.ItemConvertible,int,int,int)">BuyForOneEmeraldFactory</a></span>&#8203;(<a href="../item/ItemConvertible.html" title="interface in net.minecraft.item">ItemConvertible</a>&nbsp;item,
 int&nbsp;price,
 int&nbsp;maxUses,
 int&nbsp;experience)</code></th>
@@ -202,7 +202,9 @@ int&nbsp;experience)</code></th>
 <td class="colFirst"><code><a href="TradeOffer.html" title="class in net.minecraft.village">TradeOffer</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#create(net.minecraft.entity.Entity,java.util.Random)">create</a></span>&#8203;(<a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Creates a trade offer.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -269,7 +271,7 @@ int&nbsp;experience)</code></th>
 <li class="blockList">
 <section class="detail">
 <h3><a id="&lt;init&gt;(net.minecraft.item.ItemConvertible,int,int,int)">BuyForOneEmeraldFactory</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">BuyForOneEmeraldFactory</span>&#8203;(<span class="arguments"><a href="../item/ItemConvertible.html" title="interface in net.minecraft.item">ItemConvertible</a>&nbsp;itemConvertible,
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">BuyForOneEmeraldFactory</span>&#8203;(<span class="arguments"><a href="../item/ItemConvertible.html" title="interface in net.minecraft.item">ItemConvertible</a>&nbsp;item,
 int&nbsp;price,
 int&nbsp;maxUses,
 int&nbsp;experience)</span></div>
@@ -290,9 +292,12 @@ int&nbsp;experience)</span></div>
 <h3><a id="create(net.minecraft.entity.Entity,java.util.Random)">create</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="TradeOffer.html" title="class in net.minecraft.village">TradeOffer</a></span>&nbsp;<span class="memberName">create</span>&#8203;(<span class="arguments"><a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random)</span></div>
+<div class="block">Creates a trade offer.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="TradeOffers.Factory.html#create(net.minecraft.entity.Entity,java.util.Random)">create</a></code>&nbsp;in interface&nbsp;<code><a href="TradeOffers.Factory.html" title="interface in net.minecraft.village">TradeOffers.Factory</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new trade offer, or <code>null</code> if none should be created</dd>
 </dl>
 </section>
 </li>

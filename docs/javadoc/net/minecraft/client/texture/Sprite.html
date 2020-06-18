@@ -173,7 +173,9 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoClos
 <tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#frameTicks">frameTicks</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">The tick position within the current frame.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private int[]</code></td>
@@ -256,11 +258,11 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoClos
 <td class="colFirst"><code>protected </code></td>
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.client.texture.SpriteAtlasTexture,net.minecraft.client.texture.Sprite.Info,int,int,int,int,int,net.minecraft.client.texture.NativeImage)">Sprite</a></span>&#8203;(<a href="SpriteAtlasTexture.html" title="class in net.minecraft.client.texture">SpriteAtlasTexture</a>&nbsp;spriteAtlasTexture,
 <a href="Sprite.Info.html" title="class in net.minecraft.client.texture">Sprite.Info</a>&nbsp;info,
-int&nbsp;int2,
-int&nbsp;int3,
-int&nbsp;int4,
-int&nbsp;int5,
-int&nbsp;int6,
+int&nbsp;maxLevel,
+int&nbsp;atlasWidth,
+int&nbsp;atlasHeight,
+int&nbsp;x,
+int&nbsp;y,
 <a href="NativeImage.html" title="class in net.minecraft.client.texture">NativeImage</a>&nbsp;nativeImage)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -512,6 +514,8 @@ int&nbsp;frameY,
 <section class="detail">
 <h3><a id="frameTicks">frameTicks</a></h3>
 <div class="memberSignature"><span class="modifiers">private</span>&nbsp;<span class="returnType">int</span>&nbsp;<span class="memberName">frameTicks</span></div>
+<div class="block">The tick position within the current frame.
+ Resets to 0 on every frame advance.</div>
 </section>
 </li>
 </ul>
@@ -529,11 +533,11 @@ int&nbsp;frameY,
 <h3><a id="&lt;init&gt;(net.minecraft.client.texture.SpriteAtlasTexture,net.minecraft.client.texture.Sprite.Info,int,int,int,int,int,net.minecraft.client.texture.NativeImage)">Sprite</a></h3>
 <div class="memberSignature"><span class="modifiers">protected</span>&nbsp;<span class="memberName">Sprite</span>&#8203;(<span class="arguments"><a href="SpriteAtlasTexture.html" title="class in net.minecraft.client.texture">SpriteAtlasTexture</a>&nbsp;spriteAtlasTexture,
 <a href="Sprite.Info.html" title="class in net.minecraft.client.texture">Sprite.Info</a>&nbsp;info,
-int&nbsp;int2,
-int&nbsp;int3,
-int&nbsp;int4,
-int&nbsp;int5,
-int&nbsp;int6,
+int&nbsp;maxLevel,
+int&nbsp;atlasWidth,
+int&nbsp;atlasHeight,
+int&nbsp;x,
+int&nbsp;y,
 <a href="NativeImage.html" title="class in net.minecraft.client.texture">NativeImage</a>&nbsp;nativeImage)</span></div>
 </section>
 </li>

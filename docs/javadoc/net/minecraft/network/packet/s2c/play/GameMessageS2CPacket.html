@@ -119,18 +119,18 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 </thead>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_25133">field_25133</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>private <a href="../../../MessageType.html" title="enum in net.minecraft.network">MessageType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#location">location</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private <a href="../../../../text/Text.html" title="interface in net.minecraft.text">Text</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#message">message</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#senderUuid">senderUuid</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -161,7 +161,7 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <tr class="rowColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.text.Text,net.minecraft.network.MessageType,java.util.UUID)">GameMessageS2CPacket</a></span>&#8203;(<a href="../../../../text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;message,
 <a href="../../../MessageType.html" title="enum in net.minecraft.network">MessageType</a>&nbsp;location,
-<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uUID)</code></th>
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;senderUuid)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -203,22 +203,22 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i3">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSenderUuid()">getSenderUuid</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i4">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isNonChat()">isNonChat</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i4">
+<tr class="rowColor" id="i5">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isWritingErrorSkippable()">isWritingErrorSkippable</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns whether a throwable in writing of this packet allows the
  connection to simply skip the packet's sending than disconnecting.</div>
 </td>
-</tr>
-<tr class="rowColor" id="i5">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_29175()">method_29175</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i6">
 <td class="colFirst"><code>void</code></td>
@@ -266,8 +266,8 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="field_25133">field_25133</a></h3>
-<div class="memberSignature"><span class="modifiers">private</span>&nbsp;<span class="returnType"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a></span>&nbsp;<span class="memberName">field_25133</span></div>
+<h3><a id="senderUuid">senderUuid</a></h3>
+<div class="memberSignature"><span class="modifiers">private</span>&nbsp;<span class="returnType"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a></span>&nbsp;<span class="memberName">senderUuid</span></div>
 </section>
 </li>
 </ul>
@@ -291,7 +291,7 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <h3><a id="&lt;init&gt;(net.minecraft.text.Text,net.minecraft.network.MessageType,java.util.UUID)">GameMessageS2CPacket</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">GameMessageS2CPacket</span>&#8203;(<span class="arguments"><a href="../../../../text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;message,
 <a href="../../../MessageType.html" title="enum in net.minecraft.network">MessageType</a>&nbsp;location,
-<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uUID)</span></div>
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;senderUuid)</span></div>
 </section>
 </li>
 </ul>
@@ -361,9 +361,9 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="method_29175()">method_29175</a></h3>
+<h3><a id="getSenderUuid()">getSenderUuid</a></h3>
 <div class="memberSignature"><span class="annotations">@Environment(CLIENT)
-</span><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a></span>&nbsp;<span class="memberName">method_29175</span>()</div>
+</span><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a></span>&nbsp;<span class="memberName">getSenderUuid</span>()</div>
 </section>
 </li>
 <li class="blockList">
