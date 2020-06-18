@@ -19,7 +19,7 @@
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.js"></script>
 </head>
 <body class="class-declaration">
-<script type="text/javascript">var data = {"i0":18,"i1":18,"i2":6,"i3":18,"i4":6,"i5":6,"i6":6,"i7":18,"i8":18,"i9":18,"i10":18,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":18,"i17":18};
+<script type="text/javascript">var data = {"i0":18,"i1":18,"i2":6,"i3":18,"i4":6,"i5":6,"i6":6,"i7":18,"i8":18,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":18,"i15":18,"i16":18,"i17":18};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -116,7 +116,7 @@ loadScripts(document, 'script');</script>
 <tbody>
 <tr class="altColor" id="i0">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#angerFromTag(net.minecraft.server.world.ServerWorld,net.minecraft.nbt.CompoundTag)">angerFromTag</a></span>&#8203;(<a href="../../server/world/ServerWorld.html" title="class in net.minecraft.server.world">ServerWorld</a>&nbsp;serverWorld,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#angerFromTag(net.minecraft.server.world.ServerWorld,net.minecraft.nbt.CompoundTag)">angerFromTag</a></span>&#8203;(<a href="../../server/world/ServerWorld.html" title="class in net.minecraft.server.world">ServerWorld</a>&nbsp;world,
 <a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -156,54 +156,54 @@ loadScripts(document, 'script');</script>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i8">
-<td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_29921()">method_29921</a></span>()</code></th>
+<td class="colFirst"><code>default boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isUniversallyAngry(net.minecraft.world.World)">isUniversallyAngry</a></span>&#8203;(<a href="../../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i9">
-<td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_29922()">method_29922</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor" id="i10">
-<td class="colFirst"><code>default boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_29923(net.minecraft.world.World)">method_29923</a></span>&#8203;(<a href="../../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor" id="i11">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setAngerTime(int)">setAngerTime</a></span>&#8203;(int&nbsp;ticks)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i12">
+<tr class="altColor" id="i10">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setAngryAt(java.util.UUID)">setAngryAt</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i13">
+<tr class="rowColor" id="i11">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setAttacker(net.minecraft.entity.LivingEntity)">setAttacker</a></span>&#8203;(<a href="../LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;attacker)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i14">
+<tr class="altColor" id="i12">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setAttacking(net.minecraft.entity.player.PlayerEntity)">setAttacking</a></span>&#8203;(<a href="../player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setAttacking(net.minecraft.entity.player.PlayerEntity)">setAttacking</a></span>&#8203;(<a href="../player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;attacking)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i15">
+<tr class="rowColor" id="i13">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTarget(net.minecraft.entity.LivingEntity)">setTarget</a></span>&#8203;(<a href="../LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;target)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i16">
+<tr class="altColor" id="i14">
 <td class="colFirst"><code>default boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#shouldAngerAt(net.minecraft.entity.LivingEntity)">shouldAngerAt</a></span>&#8203;(<a href="../LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;entity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="rowColor" id="i15">
+<td class="colFirst"><code>default void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stopAnger()">stopAnger</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i16">
+<td class="colFirst"><code>default void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tickAngerLogic(net.minecraft.server.world.ServerWorld,boolean)">tickAngerLogic</a></span>&#8203;(<a href="../../server/world/ServerWorld.html" title="class in net.minecraft.server.world">ServerWorld</a>&nbsp;world,
+boolean&nbsp;bool)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 <tr class="rowColor" id="i17">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tickAngerLogic(net.minecraft.server.world.ServerWorld,boolean)">tickAngerLogic</a></span>&#8203;(<a href="../../server/world/ServerWorld.html" title="class in net.minecraft.server.world">ServerWorld</a>&nbsp;serverWorld,
-boolean&nbsp;bool)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#universallyAnger()">universallyAnger</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -264,14 +264,14 @@ boolean&nbsp;bool)</code></th>
 <li class="blockList">
 <section class="detail">
 <h3><a id="angerFromTag(net.minecraft.server.world.ServerWorld,net.minecraft.nbt.CompoundTag)">angerFromTag</a></h3>
-<div class="memberSignature"><span class="modifiers">default</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">angerFromTag</span>&#8203;(<span class="arguments"><a href="../../server/world/ServerWorld.html" title="class in net.minecraft.server.world">ServerWorld</a>&nbsp;serverWorld,
+<div class="memberSignature"><span class="modifiers">default</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">angerFromTag</span>&#8203;(<span class="arguments"><a href="../../server/world/ServerWorld.html" title="class in net.minecraft.server.world">ServerWorld</a>&nbsp;world,
 <a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</span></div>
 </section>
 </li>
 <li class="blockList">
 <section class="detail">
 <h3><a id="tickAngerLogic(net.minecraft.server.world.ServerWorld,boolean)">tickAngerLogic</a></h3>
-<div class="memberSignature"><span class="modifiers">default</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">tickAngerLogic</span>&#8203;(<span class="arguments"><a href="../../server/world/ServerWorld.html" title="class in net.minecraft.server.world">ServerWorld</a>&nbsp;serverWorld,
+<div class="memberSignature"><span class="modifiers">default</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">tickAngerLogic</span>&#8203;(<span class="arguments"><a href="../../server/world/ServerWorld.html" title="class in net.minecraft.server.world">ServerWorld</a>&nbsp;world,
 boolean&nbsp;bool)</span></div>
 </section>
 </li>
@@ -283,8 +283,8 @@ boolean&nbsp;bool)</span></div>
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="method_29923(net.minecraft.world.World)">method_29923</a></h3>
-<div class="memberSignature"><span class="modifiers">default</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">method_29923</span>&#8203;(<span class="arguments"><a href="../../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world)</span></div>
+<h3><a id="isUniversallyAngry(net.minecraft.world.World)">isUniversallyAngry</a></h3>
+<div class="memberSignature"><span class="modifiers">default</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">isUniversallyAngry</span>&#8203;(<span class="arguments"><a href="../../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world)</span></div>
 </section>
 </li>
 <li class="blockList">
@@ -301,14 +301,14 @@ boolean&nbsp;bool)</span></div>
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="method_29921()">method_29921</a></h3>
-<div class="memberSignature"><span class="modifiers">default</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">method_29921</span>()</div>
+<h3><a id="universallyAnger()">universallyAnger</a></h3>
+<div class="memberSignature"><span class="modifiers">default</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">universallyAnger</span>()</div>
 </section>
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="method_29922()">method_29922</a></h3>
-<div class="memberSignature"><span class="modifiers">default</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">method_29922</span>()</div>
+<h3><a id="stopAnger()">stopAnger</a></h3>
+<div class="memberSignature"><span class="modifiers">default</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">stopAnger</span>()</div>
 </section>
 </li>
 <li class="blockList">
@@ -322,7 +322,7 @@ boolean&nbsp;bool)</span></div>
 <section class="detail">
 <h3><a id="setAttacking(net.minecraft.entity.player.PlayerEntity)">setAttacking</a></h3>
 <div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">setAttacking</span>&#8203;(<span class="arguments"><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation" class="externalLink">@Nullable</a>
-<a href="../player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</span></div>
+<a href="../player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;attacking)</span></div>
 </section>
 </li>
 <li class="blockList">

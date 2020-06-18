@@ -148,9 +148,9 @@ extends <a href="../PlayerManager.html" title="class in net.minecraft.server">Pl
 </thead>
 <tbody>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.server.integrated.IntegratedServer,net.minecraft.util.registry.RegistryTracker.Modifiable,net.minecraft.world.WorldSaveHandler)">IntegratedPlayerManager</a></span>&#8203;(<a href="IntegratedServer.html" title="class in net.minecraft.server.integrated">IntegratedServer</a>&nbsp;integratedServer,
-<a href="../../util/registry/RegistryTracker.Modifiable.html" title="class in net.minecraft.util.registry">RegistryTracker.Modifiable</a>&nbsp;modifiable,
-<a href="../../world/WorldSaveHandler.html" title="class in net.minecraft.world">WorldSaveHandler</a>&nbsp;worldSaveHandler)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.server.integrated.IntegratedServer,net.minecraft.util.registry.RegistryTracker.Modifiable,net.minecraft.world.WorldSaveHandler)">IntegratedPlayerManager</a></span>&#8203;(<a href="IntegratedServer.html" title="class in net.minecraft.server.integrated">IntegratedServer</a>&nbsp;server,
+<a href="../../util/registry/RegistryTracker.Modifiable.html" title="class in net.minecraft.util.registry">RegistryTracker.Modifiable</a>&nbsp;tracker,
+<a href="../../world/WorldSaveHandler.html" title="class in net.minecraft.world">WorldSaveHandler</a>&nbsp;saveHandler)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -178,8 +178,8 @@ extends <a href="../PlayerManager.html" title="class in net.minecraft.server">Pl
 <tbody>
 <tr class="altColor" id="i0">
 <td class="colFirst"><code><a href="../../text/Text.html" title="interface in net.minecraft.text">Text</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#checkCanJoin(java.net.SocketAddress,com.mojang.authlib.GameProfile)">checkCanJoin</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/net/SocketAddress.html?is-external=true" title="class or interface in java.net" class="externalLink">SocketAddress</a>&nbsp;socketAddress,
-com.mojang.authlib.GameProfile&nbsp;gameProfile)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#checkCanJoin(java.net.SocketAddress,com.mojang.authlib.GameProfile)">checkCanJoin</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/net/SocketAddress.html?is-external=true" title="class or interface in java.net" class="externalLink">SocketAddress</a>&nbsp;address,
+com.mojang.authlib.GameProfile&nbsp;profile)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i1">
@@ -243,9 +243,9 @@ com.mojang.authlib.GameProfile&nbsp;gameProfile)</code></th>
 <li class="blockList">
 <section class="detail">
 <h3><a id="&lt;init&gt;(net.minecraft.server.integrated.IntegratedServer,net.minecraft.util.registry.RegistryTracker.Modifiable,net.minecraft.world.WorldSaveHandler)">IntegratedPlayerManager</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">IntegratedPlayerManager</span>&#8203;(<span class="arguments"><a href="IntegratedServer.html" title="class in net.minecraft.server.integrated">IntegratedServer</a>&nbsp;integratedServer,
-<a href="../../util/registry/RegistryTracker.Modifiable.html" title="class in net.minecraft.util.registry">RegistryTracker.Modifiable</a>&nbsp;modifiable,
-<a href="../../world/WorldSaveHandler.html" title="class in net.minecraft.world">WorldSaveHandler</a>&nbsp;worldSaveHandler)</span></div>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">IntegratedPlayerManager</span>&#8203;(<span class="arguments"><a href="IntegratedServer.html" title="class in net.minecraft.server.integrated">IntegratedServer</a>&nbsp;server,
+<a href="../../util/registry/RegistryTracker.Modifiable.html" title="class in net.minecraft.util.registry">RegistryTracker.Modifiable</a>&nbsp;tracker,
+<a href="../../world/WorldSaveHandler.html" title="class in net.minecraft.world">WorldSaveHandler</a>&nbsp;saveHandler)</span></div>
 </section>
 </li>
 </ul>
@@ -271,8 +271,8 @@ com.mojang.authlib.GameProfile&nbsp;gameProfile)</code></th>
 <li class="blockList">
 <section class="detail">
 <h3><a id="checkCanJoin(java.net.SocketAddress,com.mojang.authlib.GameProfile)">checkCanJoin</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="../../text/Text.html" title="interface in net.minecraft.text">Text</a></span>&nbsp;<span class="memberName">checkCanJoin</span>&#8203;(<span class="arguments"><a href="https://docs.oracle.com/javase/8/docs/api/java/net/SocketAddress.html?is-external=true" title="class or interface in java.net" class="externalLink">SocketAddress</a>&nbsp;socketAddress,
-com.mojang.authlib.GameProfile&nbsp;gameProfile)</span></div>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="../../text/Text.html" title="interface in net.minecraft.text">Text</a></span>&nbsp;<span class="memberName">checkCanJoin</span>&#8203;(<span class="arguments"><a href="https://docs.oracle.com/javase/8/docs/api/java/net/SocketAddress.html?is-external=true" title="class or interface in java.net" class="externalLink">SocketAddress</a>&nbsp;address,
+com.mojang.authlib.GameProfile&nbsp;profile)</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../PlayerManager.html#checkCanJoin(java.net.SocketAddress,com.mojang.authlib.GameProfile)">checkCanJoin</a></code>&nbsp;in class&nbsp;<code><a href="../PlayerManager.html" title="class in net.minecraft.server">PlayerManager</a></code></dd>

@@ -90,7 +90,7 @@ loadScripts(document, 'script');</script>
 <div class="inheritance"><a href="../../widget/EntryListWidget.Entry.html" title="class in net.minecraft.client.gui.widget">net.minecraft.client.gui.widget.EntryListWidget.Entry</a>&lt;E&gt;
 <div class="inheritance"><a href="../../widget/ElementListWidget.Entry.html" title="class in net.minecraft.client.gui.widget">net.minecraft.client.gui.widget.ElementListWidget.Entry</a>&lt;<a href="EditGameRulesScreen.AbstractRuleWidget.html" title="class in net.minecraft.client.gui.screen.world">EditGameRulesScreen.AbstractRuleWidget</a>&gt;
 <div class="inheritance"><a href="EditGameRulesScreen.AbstractRuleWidget.html" title="class in net.minecraft.client.gui.screen.world">net.minecraft.client.gui.screen.world.EditGameRulesScreen.AbstractRuleWidget</a>
-<div class="inheritance"><a href="EditGameRulesScreen.class_5400.html" title="class in net.minecraft.client.gui.screen.world">net.minecraft.client.gui.screen.world.EditGameRulesScreen.class_5400</a>
+<div class="inheritance"><a href="EditGameRulesScreen.NamedRuleWidget.html" title="class in net.minecraft.client.gui.screen.world">net.minecraft.client.gui.screen.world.EditGameRulesScreen.NamedRuleWidget</a>
 <div class="inheritance">net.minecraft.client.gui.screen.world.EditGameRulesScreen.IntRuleWidget</div>
 </div>
 </div>
@@ -109,7 +109,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <pre>@Environment(CLIENT)
 public class <span class="typeNameLabel">EditGameRulesScreen.IntRuleWidget</span>
-extends <a href="EditGameRulesScreen.class_5400.html" title="class in net.minecraft.client.gui.screen.world">EditGameRulesScreen.class_5400</a></pre>
+extends <a href="EditGameRulesScreen.NamedRuleWidget.html" title="class in net.minecraft.client.gui.screen.world">EditGameRulesScreen.NamedRuleWidget</a></pre>
 </section>
 <section class="summary">
 <ul class="blockList">
@@ -139,10 +139,10 @@ extends <a href="EditGameRulesScreen.class_5400.html" title="class in net.minecr
 </table>
 </div>
 <div class="inheritedList">
-<h3>Fields inherited from class&nbsp;net.minecraft.client.gui.screen.world.<a href="EditGameRulesScreen.class_5400.html" title="class in net.minecraft.client.gui.screen.world">EditGameRulesScreen.class_5400</a></h3>
-<a id="fields.inherited.from.class.net.minecraft.client.gui.screen.world.EditGameRulesScreen.class_5400">
+<h3>Fields inherited from class&nbsp;net.minecraft.client.gui.screen.world.<a href="EditGameRulesScreen.NamedRuleWidget.html" title="class in net.minecraft.client.gui.screen.world">EditGameRulesScreen.NamedRuleWidget</a></h3>
+<a id="fields.inherited.from.class.net.minecraft.client.gui.screen.world.EditGameRulesScreen.NamedRuleWidget">
 <!--   -->
-</a><code><a href="EditGameRulesScreen.class_5400.html#field_25630">field_25630</a></code></div>
+</a><code><a href="EditGameRulesScreen.NamedRuleWidget.html#children">children</a></code></div>
 </section>
 </li>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -193,16 +193,16 @@ extends <a href="EditGameRulesScreen.class_5400.html" title="class in net.minecr
 <tbody>
 <tr class="altColor" id="i0">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#render(net.minecraft.client.util.math.MatrixStack,int,int,int,int,int,int,int,boolean,float)">render</a></span>&#8203;(<a href="../../../util/math/MatrixStack.html" title="class in net.minecraft.client.util.math">MatrixStack</a>&nbsp;matrixStack,
-int&nbsp;int2,
-int&nbsp;int3,
-int&nbsp;int4,
-int&nbsp;int5,
-int&nbsp;int6,
-int&nbsp;int7,
-int&nbsp;int8,
-boolean&nbsp;bool,
-float&nbsp;float2)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#render(net.minecraft.client.util.math.MatrixStack,int,int,int,int,int,int,int,boolean,float)">render</a></span>&#8203;(<a href="../../../util/math/MatrixStack.html" title="class in net.minecraft.client.util.math">MatrixStack</a>&nbsp;matrices,
+int&nbsp;index,
+int&nbsp;y,
+int&nbsp;x,
+int&nbsp;entryWidth,
+int&nbsp;entryHeight,
+int&nbsp;mouseX,
+int&nbsp;mouseY,
+boolean&nbsp;hovered,
+float&nbsp;tickDelta)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -210,10 +210,10 @@ float&nbsp;float2)</code></th>
 </div>
 </div>
 <div class="inheritedList">
-<h3>Methods inherited from class&nbsp;net.minecraft.client.gui.screen.world.<a href="EditGameRulesScreen.class_5400.html" title="class in net.minecraft.client.gui.screen.world">EditGameRulesScreen.class_5400</a></h3>
-<a id="methods.inherited.from.class.net.minecraft.client.gui.screen.world.EditGameRulesScreen.class_5400">
+<h3>Methods inherited from class&nbsp;net.minecraft.client.gui.screen.world.<a href="EditGameRulesScreen.NamedRuleWidget.html" title="class in net.minecraft.client.gui.screen.world">EditGameRulesScreen.NamedRuleWidget</a></h3>
+<a id="methods.inherited.from.class.net.minecraft.client.gui.screen.world.EditGameRulesScreen.NamedRuleWidget">
 <!--   -->
-</a><code><a href="EditGameRulesScreen.class_5400.html#children()">children</a>, <a href="EditGameRulesScreen.class_5400.html#method_29989(net.minecraft.client.util.math.MatrixStack,int,int)">method_29989</a></code></div>
+</a><code><a href="EditGameRulesScreen.NamedRuleWidget.html#children()">children</a>, <a href="EditGameRulesScreen.NamedRuleWidget.html#drawName(net.minecraft.client.util.math.MatrixStack,int,int)">drawName</a></code></div>
 <div class="inheritedList">
 <h3>Methods inherited from class&nbsp;net.minecraft.client.gui.widget.<a href="../../widget/ElementListWidget.Entry.html" title="class in net.minecraft.client.gui.widget">ElementListWidget.Entry</a></h3>
 <a id="methods.inherited.from.class.net.minecraft.client.gui.widget.ElementListWidget.Entry">
@@ -290,16 +290,16 @@ float&nbsp;float2)</code></th>
 <li class="blockList">
 <section class="detail">
 <h3><a id="render(net.minecraft.client.util.math.MatrixStack,int,int,int,int,int,int,int,boolean,float)">render</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">render</span>&#8203;(<span class="arguments"><a href="../../../util/math/MatrixStack.html" title="class in net.minecraft.client.util.math">MatrixStack</a>&nbsp;matrixStack,
-int&nbsp;int2,
-int&nbsp;int3,
-int&nbsp;int4,
-int&nbsp;int5,
-int&nbsp;int6,
-int&nbsp;int7,
-int&nbsp;int8,
-boolean&nbsp;bool,
-float&nbsp;float2)</span></div>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">render</span>&#8203;(<span class="arguments"><a href="../../../util/math/MatrixStack.html" title="class in net.minecraft.client.util.math">MatrixStack</a>&nbsp;matrices,
+int&nbsp;index,
+int&nbsp;y,
+int&nbsp;x,
+int&nbsp;entryWidth,
+int&nbsp;entryHeight,
+int&nbsp;mouseX,
+int&nbsp;mouseY,
+boolean&nbsp;hovered,
+float&nbsp;tickDelta)</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../widget/EntryListWidget.Entry.html#render(net.minecraft.client.util.math.MatrixStack,int,int,int,int,int,int,int,boolean,float)">render</a></code>&nbsp;in class&nbsp;<code><a href="../../widget/EntryListWidget.Entry.html" title="class in net.minecraft.client.gui.widget">EntryListWidget.Entry</a>&lt;<a href="EditGameRulesScreen.AbstractRuleWidget.html" title="class in net.minecraft.client.gui.screen.world">EditGameRulesScreen.AbstractRuleWidget</a>&gt;</code></dd>
